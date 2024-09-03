@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Slider from "@/components/Slider";
 import { SliderData } from "@/components/SliderData";
+import YoutubeSection from "@/components/YoutubeSection";
 
 interface HeroProps {
   heading: string;
@@ -18,6 +19,7 @@ const Home: React.FC = () => {
     <>
       <Hero heading={heroData.heading} message={heroData.message} />
       <Slider slides={SliderData} />
+      <YoutubeSection />
     </>
   );
 };
